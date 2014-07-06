@@ -8,10 +8,10 @@ function gruntConfig(grunt) {
     cssPath: 'public/stylesheets',
     htmlPath: 'public/templates',
 
-    concat: require('./grunt/concat')
+    concat: require('./grunt/concat'),
     //copy: require('./grunt/copy'),
     //sass: require('./grunt/sass'),
-    //ngtemplates: require('./grunt/ngtemplates')
+    ngtemplates: require('./grunt/ngtemplates')
 
   });
 

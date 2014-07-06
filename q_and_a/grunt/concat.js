@@ -4,6 +4,23 @@ module.exports = {
       '<%= componentsPath %>/angular/angular.min.js',
       '<%= componentsPath %>/angular-ui-router/release/angular-ui-router.min.js'
     ],
-    dest: '<%= componentsPath %>/components.js'
+    dest: '<%= jsPath %>/components.js'
+  },
+  dev: {
+    options: {
+      process: function(src, filepath) {
+        return '\n// ' + filepath + '\n' + src;
+      }
+    },
+    src: [
+      '<%= jsPath %>/app/states/states_config.js',
+      '<%= jsPath %>/app/states/*.js',
+      '<%= jsPath %>/app/list/list_module.js',
+      '<%= jsPath %>/app/list/*.js',
+      '<%= jsPath %>/app/templates_module.js',
+      '<%= jsPath %>/app/main_module.js',
+      '<%= jsPath %>/app/**/*.js',
+    ],
+    dest: '<%= jsPath %>/app.js'
   }
 };
