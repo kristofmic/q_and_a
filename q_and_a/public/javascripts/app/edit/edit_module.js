@@ -3,7 +3,9 @@
   var
     dependencies;
 
-  dependencies = [];
+  dependencies = [
+    'ch.QAs'
+  ];
 
   ch.edit = angular.module('ch.Edit', dependencies);
 

@@ -23,7 +23,12 @@
       .state('list', {
         url: '/list',
         templateUrl: 'list.html',
-        controller: 'listController'
+        controller: 'listController',
+        resolve: {
+          qas: ['qasFactory', function(qasFactory){
+            return qasFactory.index();
+          }]
+        }
       })
       .state('edit', {
         url: '/edit',
