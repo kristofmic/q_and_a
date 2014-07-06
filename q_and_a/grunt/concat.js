@@ -15,6 +15,10 @@ module.exports = {
     src: [
       '<%= jsPath %>/app/states/states_config.js',
       '<%= jsPath %>/app/states/*.js',
+      '<%= jsPath %>/app/nav/nav_module.js',
+      '<%= jsPath %>/app/nav/*.js',
+      '<%= jsPath %>/app/edit/edit_module.js',
+      '<%= jsPath %>/app/edit/*.js',
       '<%= jsPath %>/app/list/list_module.js',
       '<%= jsPath %>/app/list/*.js',
       '<%= jsPath %>/app/templates_module.js',

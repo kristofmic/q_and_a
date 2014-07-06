@@ -10,12 +10,12 @@ function gruntConfig(grunt) {
 
     concat: require('./grunt/concat'),
     //copy: require('./grunt/copy'),
-    //sass: require('./grunt/sass'),
+    sass: require('./grunt/sass'),
     ngtemplates: require('./grunt/ngtemplates')
 
   });
 
   require('load-grunt-tasks')(grunt);
 
-  grunt.registerTask('build', ['concat:components', 'copy:main', 'sass:dev', 'ngtemplates:dev', 'concat:dev']);
+  grunt.registerTask('build', ['concat:components', 'ngtemplates:dev', 'concat:dev', 'sass:dev']);
 }

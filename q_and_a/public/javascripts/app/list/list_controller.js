@@ -8,10 +8,10 @@
     listController
   ];
 
-  list.controller('ListController', definitions);
+  list.controller('listController', definitions);
 
   function listController($scope) {
-    console.log('hello world');
+
   }
 
 })(window.ch.list);

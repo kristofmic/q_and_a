@@ -6,7 +6,9 @@
   dependencies = [
     'ch.States',
     'ch.Templates',
-    'ch.List'
+    'ch.Nav',
+    'ch.List',
+    'ch.Edit'
   ];
 
   ch.main = angular.module('ch.Main', dependencies);

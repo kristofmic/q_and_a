@@ -23,7 +23,12 @@
       .state('list', {
         url: '/list',
         templateUrl: 'list.html',
-        controller: 'ListController'
+        controller: 'listController'
+      })
+      .state('edit', {
+        url: '/edit',
+        templateUrl: 'edit.html',
+        controller: 'editController'
       });
   }
 
